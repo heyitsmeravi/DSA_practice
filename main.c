@@ -18,6 +18,8 @@ int main(){
 	printf("2 for binary search\n");
 	printf("3 for Bubble sort\n");
 	printf("4 for selection sort\n");
+	printf("5 for merge sort\n");
+	printf("6 for insertion sort\n");
 	scanf("%d",&choice);
 	switch(choice){
 		case 1:
@@ -41,14 +43,21 @@ int main(){
 			selectionSort(arr,n);
 			printf("the sorted array is:");
 			for (int i=0;i<n;i++){
-				printf("%d",arr[i]);
+				printf("%d ",arr[i]);
 			}
 			break;
 		case 5:
 			mergeSort(arr,n);
 			printf("the sorted array is: ");
 			for (int i=0;i<n;i++){
-				printf("%d", arr[i]);
+				printf("%d ", arr[i]);
+			}
+			break;
+		case 6:
+			insertionSort(arr,n);
+			printf("the sorted array is: ");
+			for (int i=0;i<n;i++){
+				printf("%d ", arr[i]);
 			}
 			break;
 		default:
