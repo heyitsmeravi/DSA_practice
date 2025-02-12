@@ -1,6 +1,11 @@
 #include<stdio.h>
 #include "functions.h"
-
+void print(int arr[],int size){
+	printf("the sorted array is: ");
+                        for (int i=0;i<size;i++){
+                                printf("%d ", arr[i]);
+                        }
+}
 int main(){
 	int k,n;
 	//printf("enter the size of the array:");
@@ -20,6 +25,8 @@ int main(){
 	printf("4 for selection sort\n");
 	printf("5 for merge sort\n");
 	printf("6 for insertion sort\n");
+	printf("7 for quick sort\n");
+	printf("8 for viewing the array\n");
 	scanf("%d",&choice);
 	switch(choice){
 		case 1:
@@ -34,36 +41,26 @@ int main(){
 			break;
 		case 3: 
 			bubbleSort(arr,n);
-			printf("the sorted array is:");
-			for (int i=0;i<n;i++){
-				printf("%d ",arr[i]);
-			}
 			break;
 		case 4:
 			selectionSort(arr,n);
-			printf("the sorted array is:");
-			for (int i=0;i<n;i++){
-				printf("%d ",arr[i]);
-			}
 			break;
 		case 5:
 			mergeSort(arr,n);
-			printf("the sorted array is: ");
-			for (int i=0;i<n;i++){
-				printf("%d ", arr[i]);
-			}
 			break;
 		case 6:
 			insertionSort(arr,n);
-			printf("the sorted array is: ");
-			for (int i=0;i<n;i++){
-				printf("%d ", arr[i]);
-			}
+			break;
+		case 7:
+			quickSort(arr,n);
+			break;
+		case 8:
+			print(arr,n);
 			break;
 		default:
 			printf("Invalid Input");
 	}
-	//printf("Want to continue!! (1 for yes ,0 for no)");
+	printf("\nWant to continue!! (1 for yes ,0 for no)");
 	scanf("%d",&func);
 	}
 return 0;

@@ -1,5 +1,7 @@
 #include<stdio.h>
 int main(){
-	printf("Hello World!");
+	while(1){
+	printf("i will not sleep now without informing you sorry na!!!!\n");
+	}
 	return 0;
 }
