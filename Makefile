@@ -1,5 +1,5 @@
-program: main.o linear.o binary.o bubble.o selection.o merge.o insert.o quick.o linkedListInsertBegin.o linkedListInsertEnd.o linkedListInsertPos.o freeList.o
-	gcc main.c linear.c binary.c bubble.c selection.c merge.c insert.c quick.o linkedListInsertBegin.o linkedListInsertEnd.o linkedListInsertPos.o freeList.o -o program
+program: main.o linear.o binary.o bubble.o selection.o merge.o insert.o quick.o linkedListInsertBegin.o linkedListInsertEnd.o linkedListInsertPos.o linkedListDeleteBegin.o linkedListDeleteEnd.o linkedListDeletePos.o freeList.o
+	gcc main.o linear.o binary.o bubble.o selection.o merge.o insert.o quick.o linkedListInsertBegin.o linkedListInsertEnd.o linkedListInsertPos.o linkedListDeleteBegin.o linkedListDeleteEnd.o linkedListDeletePos.o freeList.o -o program
 main.o: main.c functions.h
 	gcc -c main.c
 linear.o: linear.c functions.h
@@ -22,6 +22,12 @@ linkedListInsertEnd.o: linkedListInsertEnd.c functions.h
 	gcc -c linkedListInsertEnd.c
 linkedListInsertPos.o: linkedListInsertPos.c functions.h
 	gcc -c linkedListInsertPos.c
+linkedListDeleteBegin.o: linkedListDeleteBegin.c functions.h 
+	gcc -c linkedListDeleteBegin.c
+linkedListDeleteEnd.o: linkedListDeleteEnd.c functions.h
+	gcc -c linkedListDeleteEnd.c
+linkedListDeletePos.o: linkedListDeletePos.c functions.h
+	gcc -c linkedListDeletePos.c
 freeList.o: freeList.c functions.h
 	gcc -c freeList.c
 clean:

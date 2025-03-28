@@ -87,8 +87,11 @@ int main(){
 				       printf("2. Insert at Beginning\n");
 				       printf("3. Insert at End\n");
 				       printf("4. Insert at specified position\n");
-				       printf("5. Display List\n");
-				       printf("6. Free List\n");
+				       printf("5. Delete from Beginning\n");
+				       printf("6. Delete from End\n");
+				       printf("7. Delete from Specified Position\n");
+				       printf("8. Display List\n");
+				       printf("9. Free List\n");
 				       scanf("%d",&choice);
 				       switch(choice){
 					       case 1:{
@@ -118,11 +121,26 @@ int main(){
 						       head=insertAtPosition(head,data,pos);
 						       break;
 					       }
-					       case 5:{
+					       case 5: {
+							head=deleteAtBegin(head);
+							break;
+					       }
+					       case 6: {
+							head=deleteAtEnd(head);
+							break;
+						}
+					       case 7:{
+							int pos;
+							printf("Enter the Position: ");
+							scanf("%d",&pos);
+							head=deleteAtPos(head,pos);
+							break;
+						}
+					       case 8:{
 							      displayList(head);
 							      break;
 						      }
-						case 6: {
+						case 9: {
 							head=freeList(head);
 							printf("List free successfully!");
 							break;

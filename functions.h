@@ -17,6 +17,9 @@ Node* insertAtBeginning(Node* head, int data);
 Node* continuousInsert(Node* head);
 Node* insertAtEnd(Node* head, int data);
 Node* insertAtPosition(Node* head, int data,int pos);
+Node* deleteAtBegin(Node* head);
+Node* deleteAtEnd(Node* head);
+Node* deleteAtPos(Node* head,int pos);
 Node* freeList(Node* head);
 void displayList(Node* head);
 #endif

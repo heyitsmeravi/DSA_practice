@@ -5,7 +5,7 @@ Node* insertAtPosition(Node* head, int data,int pos){
 	Node* newNode,*temp;
 	newNode=(Node*)malloc(sizeof(Node));
 	newNode->data=data;
-	newNode->next=NULL;
+  	newNode->next=NULL;
 	temp=head;
 	int counter=1;
 	while(counter!=pos-1){
