@@ -22,24 +22,25 @@ Node* continuousInsert(Node* head){
 		newNode->next=NULL;
 		if (head==NULL){
 			head=temp=newNode;
-			}else{
-				temp->next=newNode;
-				temp=newNode;
-				}
-				printf("wanna continue! 1 for yes 0 for no: ");
-				scanf("%d",&exit);
+		}else{
+			temp->next=newNode;
+			temp=newNode;
+		}
+		printf("wanna continue! 1 for yes 0 for no: ");
+		scanf("%d",&exit);
 	}while(exit);
 	return head;
 }
 void displayList(Node* head) {
-                                  if (head == NULL) {
-                                          printf("List is empty\n");
-                                          return;
-                                  }
- 
-                                  Node* temp = head;
-                                  while (temp != NULL) {
-                                          printf("%d -> ", temp->data);
-                                          temp = temp->next;
-                                  }
-                                  printf("NULL\n");                          }
+	if (head == NULL) {
+		printf("List is empty\n");
+		return;
+	}
+
+	Node* temp = head;
+	while (temp != NULL) {
+		printf("%d -> ", temp->data);
+		temp = temp->next;
+	}
+	printf("NULL\n");       
+}
