@@ -11,6 +11,6 @@ class Solution {
 };
 int main(){
     Solution obj;
-    obj.recr_toh(4,'A','B','C');
+    obj.recr_toh(6,'A','B','C');
     return 0;
 }
