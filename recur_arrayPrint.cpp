@@ -14,6 +14,6 @@ class Solution {
 };
 int main(){
     Solution obj;
-    obj.printArray({1,2,3,4},0);
+    obj.printArray({1,2,3,4,7,5,6},0);
     return 0;
 }

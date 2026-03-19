@@ -14,7 +14,7 @@ class Solution {
 
 int main(){
     Solution obj;
-    vector<int>arr={1,2,3,4};
+    vector<int>arr={1,2,3,4,7,5,6};
     int idx=0;
     obj.arrayReversePrint(arr,idx);
     return 0;
